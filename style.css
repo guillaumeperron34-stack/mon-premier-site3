@@ -116,4 +116,11 @@ button {
 }
 button:hover { opacity: 0.9; }
 
+/* Empêche les inputs et textarea de déborder à cause du padding du parent */
+input, textarea {
+  width: 100%;
+  box-sizing: border-box; /* ✅ calcule la largeur en incluant le padding */
+}
+
+
 
