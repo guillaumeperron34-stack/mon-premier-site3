@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Mon site personnel</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mon site personnel</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Me contacter</h2>
+      <p>Tu peux m’envoyer un message à <a href="guillaume.perron34@gmail.com"></a>guillaume.perron34@gmail.com</p>
+
+      <h3>Ou utilise ce formulaire (démo)</h3>
+      <!-- Formulaire de démonstration : pas d’envoi réel sans backend -->
+      <form action="#" method="post">
+        <div>
+          <label for="nom">Nom</label><br />
+          <input type="text" id="nom" name="nom" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <p style="font-size:0.9em;color:#666">💡 Le bouton “Envoyer” ne fait rien pour l’instant (il faudrait un serveur ou un service tiers). C’est juste pour la mise en forme.</p>
+    </main>
+
+    <footer>
+      <p>© 2025 Mon site personnel</p>
+    </footer>
+  </body>
+</html>

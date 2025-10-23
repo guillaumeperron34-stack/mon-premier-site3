@@ -1,0 +1,97 @@
+/* Style général */
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* En-tête */
+header {
+  background-color: orchid;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none; /* retire les puces */
+  padding: 0;
+  display: flex;
+  justify-content: center; /* centre le menu */
+  gap: 20px; /* espace entre les liens */
+}
+
+nav a {
+  color: white;
+  text-decoration: none; /* retire le soulignement */
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline; /* effet au survol */
+}
+
+/* Contenu principal */
+main {
+  text-align: center;
+  padding: 40px;
+}
+
+main {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto; /* centre horizontalement et ajoute de l'espace */
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/* Pied de page */
+footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column; /* le menu devient vertical */
+    align-items: center;
+  }
+
+  main {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+form div { margin-bottom: 12px; }
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  background: orchid;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover { opacity: 0.9; }
+
+
