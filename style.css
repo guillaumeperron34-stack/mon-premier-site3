@@ -120,7 +120,104 @@ button:hover { opacity: 0.9; }
 input, textarea {
   width: 100%;
   box-sizing: border-box; /* ✅ calcule la largeur en incluant le padding */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: orchid; /* couleur de ton thème 💜 */
+}
+
+/* Section services (Flexbox) */
+.services { margin-top: 32px; }
+.services h3 { margin-bottom: 16px; }
+
+.lignes-flex {
+  display: flex;
+  gap: 16px;              /* espace entre cartes */
+  flex-wrap: wrap;        /* passe à la ligne sur petits écrans */
+  justify-content: center/* centre les cartes */
+}
+
+.carte {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  padding: 16px;
+  width: 260px;           /* largeur fixe confortable */
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.carte:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+}
+.carte h4 { margin: 0 0 8px; }
+
+/* Galerie (CSS Grid) */
+.galerie { margin-top: 32px; }
+.galerie h3 { margin-bottom: 16px; }
+
+.grille {
+  display: grid;
+  gap: 12px;
+  /* colonnes auto-adaptées : de min 180px à max 1fr */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.grille img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  aspect-ratio: 4/3;  /* garde un ratio propre même si l'image se charge lentement */
+}
+
+/* Bouton de thème */
+#theme-toggle {
+  background: white;
+  color: orchid;
+  border: 2px solid orchid;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background: orchid;
+  color: white;
+}
+
+/* Mode sombre */
+body.sombre {
+  background-color: #222;
+  color: rgb(15, 15, 15);
+}
+
+body.sombre header {
+  background-color: #333;
+}
+
+body.sombre main {
+  background-color: #444;
+  border-color: #666;
+}
+
+body.sombre footer {
+  background-color: #111;
+  color: #ccc;
+}
+
+
+
+
 
 
 
